@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header>
@@ -8,7 +10,7 @@ export default function Header() {
         <div className="menus">
           <ul>
             <li>
-              <a href="#">Início</a>
+              <Link to="/"><a href="#">Início</a></Link>
             </li>
             <li>
               <a href="#">Cupons</a>
@@ -22,7 +24,8 @@ export default function Header() {
           </ul>
         </div>
 
-        <a href="#" className="loginButton"><span>Login</span></a>
+        {/* <Link to="/login"><a href="#" className="loginButton"><span>Login</span></a></Link> */}
+        <Link to="/login" className="loginButton"><span>Login</span></Link>
       {/* </div> */}
     </header>
   );
