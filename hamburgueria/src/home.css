@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Shrikhand&display=swap');
+/* font-family: "Shrikhand", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #E80088;
+  font-family: "Montserrat", sans-serif;
+}
+
+body * {
+  line-height: 160%;
+}
+
+header {
+  background: #f5ebdc;
+  justify-content: space-between;
+  padding: 0px 100px;
+  display: flex;
+  /* position: absolute; */
+  width: 100%;
+/* 
+  position: fixed;
+  z-index: 1000; */
+}
+
+header .logo {
+  position: relative;
+  top: 40px;
+}
+
+header .logo img {
+  width: 90px;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+}
+
+.menus ul {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+}
+
+.menus ul li {
+  /* font-family: "Shrikhand", serif; */
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menus ul li a {
+  text-decoration: none;
+  color: #F29B1C;
+  opacity: 90%;
+  transition: 0.3s;
+}
+
+.menus ul li a:hover {
+  opacity: 100%;
+}
+
+.loginButtonHome {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  color: #fb22a1;
+  transition: 0.3s;
+}
+
+.loginButtonHome:hover {
+  color: #E80088;
+}
+
+.loginButtonHome span {
+  padding: 5px 25px;
+  background: #E80088;
+  color: #fff;
+  border-radius: 50px;
+}
+
+/* BANNER */
+
+aside {
+  width: 100%;
+  height: 85vh;
+  /* position: relative;
+  top: 104px; */
+}
+
+aside .banner {
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/banner.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding: 40px 0;
+}
+
+aside .banner .buttonBanner {
+  padding: 7px 27px;
+  background: #F29B1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+aside .banner .buttonBanner:hover {
+  scale: 1.1;
+}
+
+/* LANCHES */
+
+aside .bannerLanches {
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/banner-lanches.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 0;
+}
+
+.leftP {
+  width: 80%;
+}
+
+.leftS {
+  width: 20%;
+}
+
+aside .lanches {
+  padding: 30px;
+}
+
+aside .lanches h2 {
+  color: #fff;
+  font-family: "Shrikhand", serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+aside .lanches p {
+  color: #f5ebdc;
+  font-weight: 400;
+  padding: 10px 0 35px;
+  width: 70%;
+}
+
+aside .buttonLanches {
+  padding: 10px 30px;
+  background: #F29B1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+aside .buttonLanches:hover {
+  background: #ffac2f;
+}
+
+/* SOBREMESAS */
+
+aside .bannerSobremesas {
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/banner-sobremesas.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 0;
+}
+
+aside .sobremesas {
+  padding: 0px 180px;
+}
+
+aside .sobremesas h2 {
+  color: #fff;
+  font-family: "Shrikhand", serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+aside .sobremesas p {
+  color: #f5ebdc;
+  font-weight: 400;
+  padding: 10px 0 35px;
+  width: 70%;
+}
+
+aside .buttonSobremesas {
+  padding: 10px 30px;
+  background: #E80088;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+aside .buttonSobremesas:hover {
+  background: #fb22a1;
+}
+
+sections .app {
+  display: flex;
+}
+
+sections .app .image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+sections .app .image img {
+  width: 90%;
+}
+
+sections .app .contentApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 50%;
+}
+
+/* sections .app .contentApp .content {
+  width: 80%;
+} */
+
+sections .app .contentApp .content h2 {
+  color: #f5ebdc;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+sections .app .contentApp .content h1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+sections .app .contentApp .content h1 span {
+  font-size: 90px;
+  line-height: 50px;
+}
+
+sections .app .contentApp .content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+
+  width: 80%;
+  margin: 50px 0;
+}
+
+sections .app .contentApp .images {
+  display: flex;
+  gap: 20px;
+}
+
+sections .app .contentApp .images img {
+  width: 140px;
+}
+
+/* FOOTER */
+
+footer {
+  background: rgb(80, 35, 20);
+  padding: 20px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+footer img {
+  width: 70px;
+}
+
+footer h3 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  width: 45%;
+  text-align: center;
+}

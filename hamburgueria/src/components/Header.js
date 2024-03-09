@@ -25,7 +25,8 @@ export default function Header() {
         </div>
 
         {/* <Link to="/login"><a href="#" className="loginButton"><span>Login</span></a></Link> */}
-        <Link to="/login" className="loginButton"><span>Login</span></Link>
+        <Link to="/login" className="loginButtonHome"><span>Login</span></Link>
+        {/* <a className="loginButton" src="./index.html">Login</a> */}
       {/* </div> */}
     </header>
   );
