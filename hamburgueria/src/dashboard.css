@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Shrikhand&display=swap");
+/* font-family: "Shrikhand", serif; */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+/* font-family: "Montserrat", sans-serif; */
+
+.contentDashboard {
+  display: flex;
+  height: 100vh;
+  background: #fff;
+}
+
+.menu {
+    width: 15%;
+    background: #fff;
+    padding: 30px;
+    display: flex;
+}
+
+.menu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .mainMenu {
+    padding: 20px 0;
+} */
+
+.mainMenu h3 {
+    color: #2d2d2d;
+    font-size: 18px;
+}
+
+.configurações h3 {
+    color: #2d2d2d;
+    font-size: 18px;
+}
+
+.mainMenu .iconMenu, .configurações .iconMenu {
+    width: 18px;
+}
+
+.mainMenu ul {
+    padding: 15px 0;
+}
+
+.configurações ul {
+    padding: 15px 0 0;
+}
+
+.mainMenu ul li {
+    color: #2d2d2d;
+    font-weight: 500;;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mainMenu ul li:hover {
+    background: #e8008713;
+    color: #E80088;
+}
+
+.configurações ul li {
+    color: #2d2d2d;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.configurações ul li:hover {
+    background: #e8008713;
+    color: #E80088;
+}
+
+.sectionDashboard {
+  background: #ffebf7;
+  width: 85%;
+}
+
+.logoMenu {
+    width: 70px;
+    padding-bottom: 30px;
+}
+
+/* CONTENT DASHBOARD */
+
+.sectionDashboard {
+    padding: 30px;
+}
+
+.headerDashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headerDashboard .titleDash h2 {
+    font-size: 25px;
+    color: #E80088;
+    font-weight: 780;
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+.headerDashboard .titleDash h4 {
+    font-size: 16px;
+    color: #e8008791;
+    font-weight: 500;
+}
+
+.headerDashboard .iconsDash {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+.headerDashboard img {
+    width: 55px;
+}
+
+.headerDashboard .iconNot {
+    width: 35px;
+    background: #E80088;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.headerDashboard .iconNot:hover {
+    scale: 1.1;
+}
+
+.analytics {
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.analytics .cards1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.analytics .cards1 .card1 {
+    background: #fff;
+    border-radius: 20px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.analytics .cards2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.analytics .cards2 .card2 {
+    background: #fff;
+    border-radius: 20px;
+    min-height: 350px;
+}
+
+.topCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topCard h3 {
+    color: #2d2d2d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.topCard img {
+    width: 35px;
+    background: #E80088;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.topCard img:hover {
+    background: #d6007d;
+}
+
+.valorCard h2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #E80088;
+    display: flex;
+    flex-direction: column;
+    line-height: 38px;
+}
+
+.valorCard h2 span {
+    color: #2d2d2dbf;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* CARDS 2 */
+
+.card2 {
+    padding: 25px 25px;
+}
+
+.card2 h3 {
+    color: #2d2d2d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contentCard2 {
+    margin-top: 30px;
+}
+
+.contentCard2 .pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.contentCard2 .pay:hover {
+    background: #efefef6e;
+}
+
+.contentCard2 .pay .payName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contentCard2 .pay .payName div img {
+    width: 30px;
+}
+
+.contentCard2 .pay .payName .image {
+    padding: 10px;
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+}
+
+.contentCard2 .pay .payName .contentPay h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+.contentCard2 .pay .payName .contentPay h4 {
+    font-size: 11px;
+    font-weight: 600;
+    color: #2d2d2db6;
+}
+
+.contentCard2 .pay .valor h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+.cardGraphic {
+    display: flex;
+    align-items: center;
+}
+
+.cardGraphic .graphic {
+    width: 50%;
+}
+
+.cardGraphic .graphic img {
+    width: 100%;
+}
+
+.cardGraphic .legends {
+    margin-left: 60px;
+}
+
+.cardGraphic .legends .legend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.cardGraphic .legends .legend .color1 {
+    width: 12px;
+    height: 12px;
+    background: #E3E3E3;
+    border-radius: 4px;
+}
+
+.cardGraphic .legends .legend .color2 {
+    width: 12px;
+    height: 12px;
+    background: #d6007d;
+    border-radius: 4px;
+}
+
+.cardGraphic .legends .legend h4 {
+    font-size: 18px;
+    color: #2d2d2d;
+}
+
+.cardGraphic .legends .legend h4 span {
+    font-size: 13px;
+    color: #2d2d2db0;
+    font-weight: 600;
+    display: block;
+    line-height: 10px;
+}

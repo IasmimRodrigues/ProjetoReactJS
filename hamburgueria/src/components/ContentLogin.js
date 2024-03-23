@@ -46,8 +46,9 @@ function ContentLogin() {
     }
 
     if (!hasErrors) {
-      alert("Usário logado com sucesso!");
+      // alert("Usário logado com sucesso!");
       // setFormError("Por favor, corrija os erros no formulário.");
+      window.location.href = "/dashboard";
     }
   };
 
