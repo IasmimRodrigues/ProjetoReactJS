@@ -1,0 +1,124 @@
+.cadastroProd {
+    display: flex;
+    width: 100%;
+}
+
+.contentProd {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius:  0 30px 30px 0;
+    justify-content: center;
+  }
+
+  .titleProd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 80px;
+    width: 60%;
+}
+
+.titleProd h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.titleProd div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#lista {
+  width: 80%;
+}
+
+.search-block {
+    display: flex;
+    width: 100%;
+}
+
+.search-block label {
+    color: #fff;
+    font-weight: 600;
+}
+
+.search-block input {
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 50px;
+    background: #efefef;
+    outline: 0;
+    border: solid 1px #bdbdbd;
+    padding: 0 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .table {
+    padding: 20px;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  
+  .table .th,
+  .table .td {
+    width: 25%;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .title-table {
+    background: #ca0277;
+    color: #fff;
+  }
+  
+
+  .pagination {
+    text-align: center;
+  }
+  
+  .pagination-list {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pagination-item {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .pagination-item button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: #E80088;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .pagination-item button:hover,
+  .pagination-item.active button {
+    background-color: #ffffff; /* Mudança adicionada */
+    opacity: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  

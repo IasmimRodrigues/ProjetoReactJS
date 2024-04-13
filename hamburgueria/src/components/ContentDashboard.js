@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ContentDashboard() {
   return (
     <div className="dashboard">
@@ -14,7 +16,8 @@ export default function ContentDashboard() {
                 </li>
                 <li>
                   <img className="iconMenu" src="./assets/produtos.svg" />{" "}
-                  <span>Produtos</span>
+                  
+                  <Link to="/produto"><span>Produtos</span></Link>
                 </li>
                 <li>
                   <img className="iconMenu" src="./assets/email.svg" />{" "}

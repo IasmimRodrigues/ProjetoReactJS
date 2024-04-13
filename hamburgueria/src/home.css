@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Shrikhand&display=swap");
 /* font-family: "Shrikhand", serif; */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
 /* font-family: "Montserrat", sans-serif; */
 
 * {
@@ -14,7 +14,7 @@ ul {
 }
 
 body {
-  background-color: #E80088;
+  background-color: #e80088;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -29,7 +29,7 @@ header {
   display: flex;
   /* position: absolute; */
   width: 100%;
-/* 
+  /* 
   position: fixed;
   z-index: 1000; */
 }
@@ -63,7 +63,7 @@ header .logo img {
 
 .menus ul li a {
   text-decoration: none;
-  color: #F29B1C;
+  color: #f29b1c;
   opacity: 90%;
   transition: 0.3s;
 }
@@ -83,12 +83,12 @@ header .logo img {
 }
 
 .loginButtonHome:hover {
-  color: #E80088;
+  color: #e80088;
 }
 
 .loginButtonHome span {
   padding: 5px 25px;
-  background: #E80088;
+  background: #e80088;
   color: #fff;
   border-radius: 50px;
 }
@@ -106,8 +106,9 @@ aside .banner {
   width: 100%;
   height: 100%;
   background-image: url(./assets/banner.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 
   display: flex;
   align-items: flex-end;
@@ -118,7 +119,7 @@ aside .banner {
 
 aside .banner .buttonBanner {
   padding: 7px 27px;
-  background: #F29B1C;
+  background: #f29b1c;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
@@ -175,7 +176,7 @@ aside .lanches p {
 
 aside .buttonLanches {
   padding: 10px 30px;
-  background: #F29B1C;
+  background: #f29b1c;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
@@ -225,7 +226,7 @@ aside .sobremesas p {
 
 aside .buttonSobremesas {
   padding: 10px 30px;
-  background: #E80088;
+  background: #e80088;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
@@ -327,4 +328,140 @@ footer h3 {
   font-size: 15px;
   width: 45%;
   text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .menus ul {
+    display: none; /* Oculta a lista de navegação em telas menores que 1000px */
+  }
+
+  .menu-toggle {
+    display: block; /* Exibe o ícone de hambúrguer em telas menores que 1000px */
+    cursor: pointer;
+  }
+
+  /* Adicione estilos para o ícone do menu de hambúrguer */
+  .menu-toggle i {
+    font-size: 24px;
+  }
+
+  header {
+    padding: 0 20px; /* Reduz o espaçamento nas laterais do header */
+  }
+
+  header .logo img {
+    width: 70px; /* Reduz o tamanho da logo */
+  }
+
+  .loginButtonHome span {
+    padding: 5px 15px; /* Reduz o padding do botão de login */
+  }
+
+  aside .banner {
+    background-image: url(./assets/banner-mobile.png);
+    background-repeat: no-repeat;
+    padding: 20px 0;
+  }
+
+  aside .lanches h2,
+  aside .sobremesas h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  aside .lanches p,
+  aside .sobremesas p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  aside .buttonLanches,
+  aside .buttonSobremesas {
+    display: flex;
+    justify-content: center;
+  }
+
+  aside .lanches,
+  aside .sobremesas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside .lanches p,
+  aside .sobremesas p {
+    width: 90%;
+  }
+
+  aside .bannerLanches {
+    background-position: right;
+    background-size: cover;
+    /* background-image: none;
+    background: #F29B1C; */
+  }
+
+  aside .bannerSobremesas {
+    background-position: left;
+    background-size: cover;
+    /* background-image: none;
+    background: #F29B1C; */
+  }
+
+  aside .sobremesas {
+    padding: 0px;
+  }
+
+  aside .bannerLanches,
+  aside .bannerSobremesas {
+    height: 60%;
+  }
+
+  aside:nth-child(3) {
+    height: 50%;
+  }
+  aside:nth-child(4) {
+    height: 50%;
+  }
+
+  sections .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  sections .app .contentApp, sections .app .image {
+    width: 100%;
+  }
+
+  sections .app .contentApp {
+    padding: 20px 40px 40px;
+  }
+
+  sections .app .contentApp .content h2, sections .app .contentApp .content h1 {
+    text-align: center;
+  }
+
+  sections .app .contentApp .content h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  sections .app .contentApp .content h1 span {
+    width: 100%;
+    font-size: 60px;
+  }
+
+  sections .app .contentApp .content p {
+    text-align: center;
+  }
+
+  sections .app .contentApp .content p {
+    width: 100%;
+  }
+
+  footer h3 {
+    width: 100%;
+    font-size: 12px;
+  }
 }

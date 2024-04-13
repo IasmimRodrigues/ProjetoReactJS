@@ -232,3 +232,37 @@ button {
     text-align: center;
     font-size: 30px;
 }
+
+@media screen and (max-width: 1000px) {
+  .content-login {
+    flex-direction: column;
+  }
+
+  .titleLogin, .contentLogin {
+    width: 100%;
+  }
+
+  .contentLogin {
+    padding: 50px 0;
+    border-radius: 0;
+  }
+
+  .titleLogin {
+    padding: 50px 50px 0px;
+  }
+
+  .title h2 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .title img {
+    width: 110%;
+  }
+
+  .cadastro-info {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 10px;
+  }
+}
